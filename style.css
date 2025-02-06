@@ -1,0 +1,108 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Container utama */
+.container {
+    position: relative;
+    top: 15vh;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5em;
+    color: #ff3366;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Subtext */
+.sub-text {
+    font-size: 1.2em;
+    color: #6b214d;
+}
+
+/* Tombol */
+button {
+    background: #ff5e78;
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #ff3366;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Kartu ucapan */
+.card {
+    background: white;
+    width: 80%;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 4px solid #ff6699;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease-in-out;
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* Animasi muncul kartu */
+.card.show {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Konten dalam kartu */
+.card-content h2 {
+    color: #ff3366;
+}
+
+.card-content p {
+    color: #444;
+    font-size: 1.1em;
+}
+
+.signature {
+    font-style: italic;
+    color: #ff3366;
+    margin-top: 10px;
+}
+
+/* Animasi Love Berjatuhan */
+.heart {
+    position: absolute;
+    color: #ff3366;
+    font-size: 20px;
+    opacity: 0.8;
+    animation: fall 6s linear infinite;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+}
